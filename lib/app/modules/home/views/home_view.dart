@@ -13,8 +13,71 @@ class HomeView extends GetView<HomeController> {
           shadowColor: Colors.white,
           centerTitle: true,
           backgroundColor: Colors.black,
+          actions: [IconButton(onPressed: () {}, icon: Icon(Icons.login))],
           title: Text("My Location")),
       backgroundColor: Colors.black38,
+      drawer: Drawer(
+        backgroundColor: Colors.black,
+        child: SingleChildScrollView(
+            child: Column(
+          children: [
+            InkWell(
+              splashColor: Colors.amber,
+              onTap: () {},
+              child: ListTile(
+                title: Text(
+                  "Settings",
+                  style: TextStyle(color: Colors.white),
+                ),
+                leading: Icon(
+                  Icons.settings,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Settings",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.settings,
+                color: Colors.white,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Settings",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.settings,
+                color: Colors.white,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Settings",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.settings,
+                color: Colors.white,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Settings",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.settings,
+                color: Colors.white,
+              ),
+            )
+          ],
+        )),
+      ),
       body: Center(
           child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -31,7 +94,7 @@ class HomeView extends GetView<HomeController> {
               height: 4,
             ),
             Text(
-              'User Location',
+              'Your  Location',
               style: TextStyle(
                   color: Colors.yellow,
                   fontSize: 30,
